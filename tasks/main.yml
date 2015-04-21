@@ -1,0 +1,37 @@
+---
+- name: Install Package | tomcat
+  apt:
+    state: latest
+    pkg: tomcat7
+  tags:
+    - installation
+    - tomcat
+
+- name: Configure Initscript | tomcat
+  lineinfile:
+    dest: /etc/init.d/tomcat7
+    line: JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+    insertafter: '^JAVA_TMP'
+  notify: Restart Service | tomcat
+  tags:
+    - configuration
+    - initscript
+    - tomcat
+
+- name: Configure Package | tomcat
+  template:
+    src: templates/etc/tomcat7/tomcat-users.xml
+    dest: /etc/tomcat7/tomcat-users.xml
+  notify: Restart Service | tomcat
+  tags:
+    - configuration
+    - tomcat
+
+- name: Fetch package | webgoat
+  get_url:
+    url: 'https://webgoat.googlecode.com/files/WebGoat-5.4.war'
+    dest: /var/lib/tomcat7/webapp/webgoat.war
+  notify: Restart Service | tomcat
+  tags:
+    - installation
+    - webgoat
