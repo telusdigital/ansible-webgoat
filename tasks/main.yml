@@ -20,7 +20,7 @@
 
 - name: Configure Package | tomcat
   template:
-    src: templates/etc/tomcat7/tomcat-users.xml
+    src: etc/tomcat7/tomcat-users.xml
     dest: /etc/tomcat7/tomcat-users.xml
   notify: Restart Service | tomcat
   tags:
