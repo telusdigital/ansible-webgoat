@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - colstrom.java
+  - telusdigital.java
 
 galaxy_info:
   author: Aaron Pederson
@@ -9,6 +9,6 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-      - trusty
+        - trusty
   categories:
-    - security
+    - development
