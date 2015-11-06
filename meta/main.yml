@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - telusdigital.java
+  - role: telusdigital.java
 
 galaxy_info:
   author: Aaron Pederson
