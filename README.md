@@ -11,7 +11,7 @@ Tunables
 
 Dependencies
 ------------
-* [telusdigital.apt-repository](https://github.com/telusdigital/ansible-apt-repository/)
+* [telusdigital.java](https://github.com/telusdigital/ansible-java/)
 
 Example Playbook
 ----------------
