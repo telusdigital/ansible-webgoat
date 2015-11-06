@@ -3,7 +3,7 @@
 [Webgoat](https://code.google.com/p/webgoat/) - Webgoat - a deliberately insecure JavaEE application to teach application security.
 
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
-[![Platforms](https://travis-ci.org/telusdigital/ansible-webgoat.svg?branch=master)](#)
+[![Status](https://travis-ci.org/telusdigital/ansible-webgoat.svg?branch=master)](#)
 
 Tunables
 --------
