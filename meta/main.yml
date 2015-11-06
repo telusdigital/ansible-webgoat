@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - telusdigital.ansible-java
+  - role: telusdigital.ansible-java
 
 galaxy_info:
   author: Aaron Pederson
