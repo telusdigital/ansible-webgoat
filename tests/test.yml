@@ -2,5 +2,5 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - role: telusdigital.ansible-java
+    - role: telusdigital.java
     - role: ansible-webgoat
