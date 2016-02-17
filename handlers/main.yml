@@ -3,5 +3,6 @@
   service:
     state: restarted
     name: tomcat7
+    enabled: yes
   tags:
     - disruptive
