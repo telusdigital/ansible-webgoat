@@ -1,7 +1,7 @@
 ---
-- name: Restart Service | tomcat
+- name: Reload Service | tomcat
   service:
-    state: restarted
+    state: reloaded
     name: tomcat7
     enabled: yes
   tags:
