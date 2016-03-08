@@ -1,8 +1,7 @@
 ---
-- name: Reload Service | tomcat
+- name: restart service | tomcat
   service:
-    state: reloaded
+    state: restarted
     name: tomcat7
-    enabled: yes
   tags:
     - disruptive
