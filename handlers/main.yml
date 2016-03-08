@@ -1,5 +1,5 @@
 ---
-- name: Restart Service | tomcat
+- name: restart service | tomcat
   service:
     state: restarted
     name: tomcat7
